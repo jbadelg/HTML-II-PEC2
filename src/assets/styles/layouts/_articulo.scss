@@ -1,0 +1,90 @@
+.articulo{
+  font-size: 1.5rem;
+  color: $text-portada-subt;
+}
+.intro{
+  color:$text-evento;
+}
+.encabezado {
+  display: grid;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(12,1fr);
+  place-items: center;
+  height: 60vh;
+  // height: 7vw;
+  background-image: url("../images/img1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bandaBiografia{
+  grid-row: 2;
+  grid-column: 4 / 10;
+}
+
+.bigrafiaTitulo {
+  grid-row: 4;
+  grid-column: 1/-1;
+  font-size: 5vw;
+  color: $text-portada-subt;
+}
+
+.lista{
+  color: $text-portada-subt;
+  border-top: 2px solid #414141;
+  border-bottom: 2px solid #414141;
+}
+
+.icon::before {
+  display: inline-block;
+  margin-right: 15px;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dt-1::before{
+  font-family: $font-family-font-awsome;
+  font-weight: 900; 
+  content: "\f001";
+}
+.dt-2::before{
+  font-family: $font-family-font-awsome;
+  font-weight: 900; 
+  content: "\f569";
+}
+.dt-3::before{
+  font-family: $font-family-font-awsome;
+  font-weight: 900; 
+  content: "\f7a6";
+}
+
+.detalle{
+  margin-left: 35px;
+}
+.textBlockQuote {
+  border-left: 1px solid #9a0150;
+}
+
+.figure-caption{
+  width: 50%;
+  text-align: center;
+}
+
+@media (max-width: 740px){
+  .encabezado{
+    height: 20vh;
+  }
+  .cont-blockq{
+    display: flex;
+  }
+  .blockquote{
+    width: 100%;
+  }
+  .textBlockQuote {
+    width: 100%;
+    border-top: 1px solid #9a0150;
+    border-left: none;
+  }
+}

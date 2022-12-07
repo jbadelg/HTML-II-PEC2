@@ -1,0 +1,5 @@
+@mixin ContenedorGrid($frame1: 1fr, $frame2: 1fr) {
+  display: grid;
+  grid-template-columns: $frame1 $frame2;
+  width: 100%;
+}

@@ -1,0 +1,21 @@
+.nav-link {
+  margin-right: 20px;
+}
+
+.fa-brands{
+  margin-right: 20px;
+  color: $text-evento;
+}
+
+.fa-brands:hover{
+  color: $text-portada;
+}
+
+@media (max-width: 990px){
+  footer .container-fluid{
+    flex-direction: column;
+  }
+  footer .justify-content-center {
+    text-align: center;
+  }
+}
